@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+ <div class="container">
+    <div class="header">
+        <div class="searchContainer">
+            <svg xmlns="http://www.w3.org0/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                <title>magnify</title>
+                <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+            </svg>
+            <div class="searchBar"></div>
+        </div>
+        <div class="smallLogo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="30">
+                <title>bell-ring</title>
+                <path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+            </svg>
+            <img src="berserk.jpg" alt="berserk" width="50" height="50">
+            <p> GUTS </p>
+        </div>
+      
+        <div class="mainLogo">
+            <img src="guts.jpg" alt="guts" width="80" height="80">
+            <div class="adminName">
+                <p>hi there</p>
+                <h3>Gattsu(@GUTS)</h3>
+            </div>
+        </div>
+        <div class="buttons">
+            <ul>
+                <li> 
+                    <button> New </button> 
+                </li>
+                <li>
+                    <button> Upload</button>
+                </li>
+                <li>
+                    <button> Share </button>
+                </li>
+            </ul>
+        </div>
+      </div>
+    
+    <div class="sidebar">
+        <div class="sideItem" id="dashboard">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAElEQVR4nO2YQQrDMBADfWz66ITkbS39Q+unGFQCPvjULlnZasnO2WijxGSFUgqCIPhZAFwBbAAygILPlHpuBTD11DJRBz5wjHs7mKllpr4tD0sPLTP1E3p49dAyY7in3yg9tMyAQA8tM8yhKgOFeIUkBrJz5lNtYHXOnNUGprpEjnADcJEaaEws+3/YuP73c3P78FIDLMIAjl8hSoKUGAA3jUoMbMQ0KjGQiWlUEuYKayhzq5sBgR5bXWWAttUlBphbXWZgOAgDgLoXcqPuhdyoeyE36l7ITaMVvVA6o4Hy79ViJvZCkjS6EnshSRqdiL3Q+DTKTpDD02gQBEEawRuOn4ggt0BciQAAAABJRU5ErkJggg==" alt="dashboard-layout" width="35" height="35">
+            <p>dashboard</p>
+        </div>
+    <div class="sideContainer1">
+        <div class="sideItem">
+           <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 474.882" width="15" height="15">
+            <path fill="#fff" d="M77.869 305.714L246.593 136.93c8.907-8.908 10.036-9.285 19.278-.007l168.248 168.791.013 169.168H309.057V360.644c0-7.722-6.322-14.044-14.044-14.044h-78.022c-7.723 0-14.045 6.322-14.045 14.044v114.238H77.869V305.714zM250.715 3.663L0 239.075l61.836 32.472L238.938 92.976c15.13-15.264 15.306-15.598 30.367-.676l180.858 179.247L512 239.075 260.907 3.308c-4.509-4.232-5.138-4.706-10.192.355z"/>
+            </svg>
+            <p>home</p>
+        </div>
+        <div class="sideItem" >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVR4nO2Wu0oDURCG8wKJJqiFN+wUI2ipb2AsxBDsrLQRr4WPoWitQe0ttNCgpb6BTSAoNkltNFFUcMMnB0Y4hGTOZpOgRX4YOMzOvx9zdvbshkId/TcBw8AmcAPkgHeJnOQ2gKFWAgeAQ8DDrQpwBow0C10A3mhcZWA+KHRbOggq490K0mmlCagN99c5MBhwe7Vt7/cDPnbcKA+kgLBEUiZbU9rPK+M5oLEavhhQUHye2UkNbN5TTSmpmxOQiYTkFh3edQ187TCHpc7uLi+5iMOb0cCPmtOq85WvUk4DmwkM2nGXw1vWwCWHOSl1CRk0E7OSM5OuqaSBsw5zTpnqB4c3q4EzuFWQCY5IpHxAja408Brt06oG7gW+2wD1gL66YIGn65g/gXNgCZgEuiWmJHchNbV0pEKtrouW6QvYBaI+vFFgTzy/egZ6nGDrs+jJgTJq5WeAA+AeeJUw631g2qobA57ksTX2QwCsAHFZx4E7H8/yFhgXzwSw3BC0WsBLA4NUDLVKwInPaTc1py0DW38mO+YgkKPyQ8KsL+Va/W9uR6E/0g8Ja6QRMvwT+QAAAABJRU5ErkJggg==" alt="test-account" width="15" height="15">
+            <p>profile</p>
+        </div>
+        <div class="sideItem">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxUlEQVR4nO2TQQrCMBBFg+4EPYBQvYJQ8BaCJ3DpFXoFr+DWpRsXnkIQPIMFD2DBneWVwgiphiYpAQXzISTMJP8nMz9KRfwMCAxlECgC8hcmgTGwC0B+BCYmgaHMSyDvQJzXZ3Wud4EbsJL1ANgATwfiEthqF1wA17Ym10+cSmwGnFrIL8BcK/H+lbC56AFkQB/oAWvgbsk3TOJq0zOQSj4BDjISiaWy5wM+/6CUGo+0vdYe+Qg0XOLqsi4CXogC/ygQ8TVUyj+1g/8UgeQAAAAASUVORK5CYII=" alt="new-post" width="15" height="15" >
+            <p>Messages</p>
+        </div>
+        <div class="sideItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.523 4.477,10 10,10c5.523,0 10,-4.477 10,-10c0,-5.523 -4.477,-10 -10,-10zM14.586,16l-3.293,-3.293c-0.188,-0.188 -0.293,-0.442 -0.293,-0.707v-5c0,-0.552 0.448,-1 1,-1v0c0.552,0 1,0.448 1,1v4.586l3,3c0.39,0.39 0.39,1.024 0,1.414v0c-0.39,0.39 -1.024,0.39 -1.414,0z"></path></g></g>
+            </svg>
+            <p>History</p>
+        </div>
+        <div class="sideItem">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAb0lEQVR4nO2UQQrAIAwE866i90r//wHtP6b0JjRYi7F6cI5RGNglEVlMA3AAJ+0kIGiC+8GKqAlMkYJgy2auh8BlM99DYIJM0UEtWlfap0cHHwR+qojGd0DFfjR1QMV+DIko9T52wUgSgf0t5sV/XOu9Pw3pb3rUAAAAAElFTkSuQmCC" alt="tasks" width="15" height="15">
+            <p>Tasks</p>
+        </div>
+        <div class="sideItem">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB0ElEQVR4nO2VO0tcURSFx2eEiEVKsbOID8RCC9P6CwzRjKQQEUTQQizESksrFYJYRdBE/QWCRLRRiF2aFFqJCmoTmc7G1yd7WBcOh+OZGx2rzCrX3mutmc3e52YyJZTwXwMoA0aA38A18Bf4ClS8dvAcYfwB+ooR8A7Y1b/6Ia4RuOdp3AD16t2Qdse80ob2A5eO4aL4LxTGkHqXHO4CyBYKfQPkPLNZ1SZTBE+pd9bjc0B1LLg9YJaMuidF8Ef1fg/U2mLBnQHB0j8E9wRGnaAzFlwH3HmCFdWyKYLzmw2sevydeceCWwNmthxVQDmwHgldU0+1t5wJWmPBFnAUEM2p3qwz8WHc+8itH5r3k8ES9gWEt0CD6gOB+oBqDer18SkaKrGNa8sT/rTnUvXugHG386RuezXzKi8YLIMxiU6BQaBSfG3AOPlhteqplMa0htG0oR+Ac93iW3G2MMOOWQin6sk/FKa1N0BeXbHADmATeAC+OaP9DJyRHmfOWdnol+Vp3h1+6Ixzv8d6Ok20wPMxL48a4EScZUy7HwUX4+J7eTny2wxMeHzWyAOPbFLzfhGC9+TV4vG/MoGvUbJQV0UIvnKuwUUu1aaXUELmGXgEQ5Pm6xNoGRkAAAAASUVORK5CYII=" alt="group" width="15" height="15">
+            <p>Communities</p>
+        </div>
+    </div>
+    <div class="sideContainer2">
+        <div class="sideItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24"
+               style="fill:#FFFFFF;">
+               <path d="M 9.6660156 2 L 9.1757812 4.5234375 C 8.3516137 4.8342536 7.5947862 5.2699307 6.9316406 5.8144531 L 4.5078125 4.9785156 L 2.171875 9.0214844 L 4.1132812 10.708984 C 4.0386488 11.16721 4 11.591845 4 12 C 4 12.408768 4.0398071 12.832626 4.1132812 13.291016 L 4.1132812 13.292969 L 2.171875 14.980469 L 4.5078125 19.021484 L 6.9296875 18.1875 C 7.5928951 18.732319 8.3514346 19.165567 9.1757812 19.476562 L 9.6660156 22 L 14.333984 22 L 14.824219 19.476562 C 15.648925 19.165543 16.404903 18.73057 17.068359 18.185547 L 19.492188 19.021484 L 21.826172 14.980469 L 19.886719 13.291016 C 19.961351 12.83279 20 12.408155 20 12 C 20 11.592457 19.96113 11.168374 19.886719 10.710938 L 19.886719 10.708984 L 21.828125 9.0195312 L 19.492188 4.9785156 L 17.070312 5.8125 C 16.407106 5.2676813 15.648565 4.8344327 14.824219 4.5234375 L 14.333984 2 L 9.6660156 2 z M 11.314453 4 L 12.685547 4 L 13.074219 6 L 14.117188 6.3945312 C 14.745852 6.63147 15.310672 6.9567546 15.800781 7.359375 L 16.664062 8.0664062 L 18.585938 7.40625 L 19.271484 8.5917969 L 17.736328 9.9277344 L 17.912109 11.027344 L 17.912109 11.029297 C 17.973258 11.404235 18 11.718768 18 12 C 18 12.281232 17.973259 12.595718 17.912109 12.970703 L 17.734375 14.070312 L 19.269531 15.40625 L 18.583984 16.59375 L 16.664062 15.931641 L 15.798828 16.640625 C 15.308719 17.043245 14.745852 17.36853 14.117188 17.605469 L 14.115234 17.605469 L 13.072266 18 L 12.683594 20 L 11.314453 20 L 10.925781 18 L 9.8828125 17.605469 C 9.2541467 17.36853 8.6893282 17.043245 8.1992188 16.640625 L 7.3359375 15.933594 L 5.4140625 16.59375 L 4.7285156 15.408203 L 6.265625 14.070312 L 6.0878906 12.974609 L 6.0878906 12.972656 C 6.0276183 12.596088 6 12.280673 6 12 C 6 11.718768 6.026742 11.404282 6.0878906 11.029297 L 6.265625 9.9296875 L 4.7285156 8.59375 L 5.4140625 7.40625 L 7.3359375 8.0683594 L 8.1992188 7.359375 C 8.6893282 6.9567546 9.2541467 6.6314701 9.8828125 6.3945312 L 10.925781 6 L 11.314453 4 z M 12 8 C 9.8034768 8 8 9.8034768 8 12 C 8 14.196523 9.8034768 16 12 16 C 14.196523 16 16 14.196523 16 12 C 16 9.8034768 14.196523 8 12 8 z M 12 10 C 13.111477 10 14 10.888523 14 12 C 14 13.111477 13.111477 14 12 14 C 10.888523 14 10 13.111477 10 12 C 10 10.888523 10.888523 10 12 10 z"></path>
+            </svg>
+            <p>Settings</p>
+        </div>
+        <div class="sideItem">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7ElEQVR4nO2av2sUURDHDwQTCcoFNAkI6j9gp1VEEMQgRNRGEtMI1hIRxcZakyiiGAg2FhY2gkWS8wc2ahXEwspcTEAxWkiCjQjRUz8yMIHH8W5zt2/e7hrygYWD28zkuztv5s28K5U2WKcAncAJ4DpQAarAN+CnXvJ5Vr+Te44D5VIRANqAIeAZ8JvWkb95ApwWW6UcBGwBLgBfsOMzcB5oz0rEUWCBeMwDfbHD6DbZcV/evLWIbuAN2fMa6LISsUdfd168l/8hVMQOTaN5swD0pBXRnlM4JYVZ6ykamKB43EmTYkP5ocVOMt0IcE8reyhHWil2IXVCqvXVRtsP4ADwNnDxtzUjRCp2WmrAySYf1osAP8PNFL2QbcdInb1DEtda3OQBdTjf9QDfU/pZTHwrugEMWROdjq2LnnsklW81SiiDSUJkF5uWimNnl4aZj8vOfacC/D1O6ifSbMVXeSUZBdgJXEq474Hj82CAvxqwzSdEmqJMa4E2VyEc8wm5QXz+APsdn2OB9sZ8QqQFjc24468D+Bpob9InRApNTD66MQ2MGtis+oQsEw9ZmL2Or97AxLLKkk+ITDpiccXxUwY+GNldyVLIS2CT4+ehoe2VrEJLwmev4+Ossf0ln5A57KnUFVzrhzXrEzKNPTcd+30R7E/6hMgY05prjv0zEeyP+oSEbhd8PAIO6yXbeWv6fULKRrk9K355N40q5in/D9NeESpEpuKWTEn/oZcMHywZWKvVlam4FUOO7X2GdheBzQ2FqEMZ7RddyLlEEc6Ecb7AQqpNTxwNi5e0Bs/1CpllrfJXUnlTIhwx4xSPWy2JcBa+DI6LwsyaCzxBzPYCHSt0pxJRd9ATuw1OYg7YHSTCEdOVU5jNyGGTiQjPYahkjiy4G/XsXaeJMUOt2nKKDXw7w7pVsOKTVOy8fgEhggZ1uNdoaJ1ETTvTgdSp1RrpDWQWq2PQKT1mW3Z+VCOf30l7qsO5fveIYYP1xj/mk7q+ialq1gAAAABJRU5ErkJggg==" alt="help" width="15" height="15">
+            <p>Support</p>
+        </div>
+        <div class="sideItem">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC70lEQVR4nNWaSWjWQBiGxypVXKpW3BdcUQ9eFESrFEVEL1b04NIiCkIRQaxXT7WC9iQIgihIraLgimCxehEvXgSPRbEuFEGLdaG22NpaHxn4hFD6TzKZSf7khVz+fHnfeUL+mclMlEpAwGTgCNACvJKjRX4rU1kXMA2oB75TWD+BRqBcZRTgrDQyqnTtGX1tVgAagG7iS197qihAwGLgPNCLP/UD14AVSTd+AlADPAKGSE5DklENjPfV+DJgp9ypHtJXD9AMVAGTbBpeClTKc/8cGCQ7GpQ2NUgbS00gfeRHfSaQAfKjfhPID/KjryaQjx6f54tABTBRjg3AJY//uw4TyGsPAV3AOkNGhdS4qs0E8tLR/A+wUbwWAbdl5NbHLWChnKuUWhe9MIE8dTS/Kj4LgM4Rzn8G5knNdcesVhPIFUfzzeKjB7FCapKaLY5ZF0wgJx3Np4qP6T/wRWrKHbNOmED2uTgHfEz6KzWjXLKAHSaQtSmARK4L0UoTyBR9x7CT7plmqJjS1wJ3LDN/GedaYtxmaTo9LkQgc6Zl5rMoppdtHF0hArk2Oh3F8FAOQLZHMVyWcZABvdwU1fStDxAZ4d+J33xPII9t7k6jJ5C9gdI9nkAO24Cs8QQyTt5x9DHWA8iA9bIR8N4VRHw6jO8OdiCtVhBiXO8JZDewyxNIVdwRN3Qxwto4Pkg7UBLXvDlDIMdczFdHCJjjAWJ2SEaX1QJdgZAHISH39FzJEeJhSEadE4QELS/yiuOHsK7bBsZqIulZ+71ACMgs4FsRIJ7oN0lvIAJzIGWIXr0P4xUiAKM3NNPS0UQgAj3MpxQg7np/pEaAWQ/8ThCiPfL7hgeYuoQguoFVqUAEYM55htBT9K2pQghICXDT4wZodeoQAZjRslHqCnGwaBDDYJpiQuhOo0ZlSUCt5ZxMzxQ2qSwK2BbyQc1/vdGTUZVlAUtDdr7u6zVmlQcBY4Djw75V0WNErcqjgCXSRd8A5iYZ9g+i4mybHUvLkwAAAABJRU5ErkJggg==" alt="security-shield-green" width="15" height="15">
+            <p>Privacy</p>
+        </div>
+    </div>
+    </div>
+    <div class="mainContent">
+        <div class="projectsContainer">
+           <h3 class="projectHeader">Your Projects</h3>
+           <div class="projects">
+           <div class="project">
+            <h4>super cool project</h4>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae est
+               sollicitudin, condimentum lectus eget, tempus arcu. Vestibulum efficitur </p>
+               <div class="icons">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Star-plus SVG Icon</title><path fill="currentColor" d="m5.8 21l1.6-7L2 9.2l7.2-.6L12 2l2.8 6.6l7.2.6l-3.2 2.8H18c-3.1 0-5.6 2.3-6 5.3zM17 14v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:1;"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M12 18q-5.4 0-9-6q3.6-6 9-6t9 6m-5 7h6m-3-3v6"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                 </svg>
+             </div>
+           </div>
+           <div class="project">
+            <h4>less cool project</h4>
+            <p>Vivamus pulvinar interdum suscipit. Donec laoreet nulla quam, ut
+            cursus eros sagittis eleifend. Praesent sit amet scelerisque lacus, </p>
+            <div class="icons">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Star-plus SVG Icon</title><path fill="currentColor" d="m5.8 21l1.6-7L2 9.2l7.2-.6L12 2l2.8 6.6l7.2.6l-3.2 2.8H18c-3.1 0-5.6 2.3-6 5.3zM17 14v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:1;"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M12 18q-5.4 0-9-6q3.6-6 9-6t9 6m-5 7h6m-3-3v6"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                 </svg>
+             </div>
+           </div>
+           <div class="project">
+            <h4>Impossible app</h4>
+            <p>
+               In hac habitasse platea dictumst.
+            Cras tincidunt elit et ante semper dapibus. Suspendisse potenti
+            </p>
+            <div class="icons">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Star-plus SVG Icon</title><path fill="currentColor" d="m5.8 21l1.6-7L2 9.2l7.2-.6L12 2l2.8 6.6l7.2.6l-3.2 2.8H18c-3.1 0-5.6 2.3-6 5.3zM17 14v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:1;"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M12 18q-5.4 0-9-6q3.6-6 9-6t9 6m-5 7h6m-3-3v6"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                 </svg>
+             </div>
+           </div>
+           <div class="project">
+            <h4>Easy peasy app</h4>
+            <p> Mauris faucibus gravida
+             justo id interdum. Quisque fermentum ipsum at ipsum tristique pretium</p>
+             <div class="icons">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Star-plus SVG Icon</title><path fill="currentColor" d="m5.8 21l1.6-7L2 9.2l7.2-.6L12 2l2.8 6.6l7.2.6l-3.2 2.8H18c-3.1 0-5.6 2.3-6 5.3zM17 14v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:1;"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M12 18q-5.4 0-9-6q3.6-6 9-6t9 6m-5 7h6m-3-3v6"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                 </svg>
+             </div>
+           </div>
+           <div class="project">
+            <h4>ad Blocker</h4>
+            <p>lectus consequat eleifend. Curabitur consequat dolor eget diam convallis rutrum.
+             Donec gravida consectetur porta. Quisque maximus sodales velit</p>
+             <div class="icons">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Star-plus SVG Icon</title><path fill="currentColor" d="m5.8 21l1.6-7L2 9.2l7.2-.6L12 2l2.8 6.6l7.2.6l-3.2 2.8H18c-3.1 0-5.6 2.3-6 5.3zM17 14v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:1;"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M12 18q-5.4 0-9-6q3.6-6 9-6t9 6m-5 7h6m-3-3v6"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                 </svg>
+             </div>
+           </div>
+           <div class="project">
+            <h4>Money Maker</h4>
+            <p>Nam tristique lectus nec tellus molestie rutrum. Maecenas nec sodales nisl,
+             vitae auctor risus. Nulla id urna ut felis pretium porta</p>
+             <div class="icons">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Star-plus SVG Icon</title><path fill="currentColor" d="m5.8 21l1.6-7L2 9.2l7.2-.6L12 2l2.8 6.6l7.2.6l-3.2 2.8H18c-3.1 0-5.6 2.3-6 5.3zM17 14v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:1;"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M12 18q-5.4 0-9-6q3.6-6 9-6t9 6m-5 7h6m-3-3v6"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                 </svg>
+             </div>
+           </div>
+        </div>
+        </div>
+        <div class="sideContent">
+              <div class="Anouncements">
+                <h3>Anouncements</h3>
+                 <div class="anouncementList">
+                    <div class="anouncement">
+                   <h4>site Maintenance</h4>
+                   <p> Etiam elit sapien, lacinia hngfnsshb bwgbwnf wnbns </p>
+                   </div>
+                   <div class="anouncement">
+                   <h4>Community share day</h4>
+                   <p> Fusce aliquam tellus eget scelerisque sollicitudin.</p>
+                   </div>
+                   <div class="anouncement">
+                   <h4> Updated Privacy Policy</h4>
+                    <p> Nunc efficitur non purus eu egestas.</p>
+                    </div>
+
+                 </div>
+              </div>
+              <div class="trends ">
+                 <h3>Trending</h3>
+                 <div class="users">
+                 <div class="user">
+                    <img src="casca.jpg" alt="berserk" width="60" height="60">
+                    <div class="userName">
+                    <h3>@Casca</h3>
+                    <p>Girlfriend</p>
+                    </div>
+                 </div>
+                 <div class="user">
+                    <img src="griffith.jpg" alt="berserk" width="60" height="60">
+                    <div class="userName">
+                    <h3>@griffith</h3>
+                    <p>Rival</p>
+                    </div>
+                 </div>
+                 <div class="user">
+                    <img src="serpico.jpg" alt="berserk" width="60" height="60">
+                    <div class="userName">
+                    <h3>@Serpico</h3>
+                    <p>friend</p>
+                    </div>
+                 </div>
+                 <div class="user">
+                    <img src="farnese.jpg" alt="berserk" width="60" height="60">
+                    <div class="userName">
+                    <h3>@Farnese</h3>
+                    <p>side bitch</p>
+                    </div>
+                 </div>
+                 </div>
+              </div>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
